@@ -9,11 +9,11 @@ search.addEventListener('click', () => {
 
     const APIKey = '19fa80fb8a2d5dddcc9f334c0db14f16'
     const city = document.querySelector('.search-box input').value
-
+    const language = 'es'
     if (city == '')
         return
 
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${APIKey}&lang=${language}`)
         .then(response => response.json())
         .then(json => {
 

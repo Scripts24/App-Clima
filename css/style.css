@@ -199,3 +199,29 @@ body {
     font-weight: 500;
     margin-top : 12px;
 }
+
+
+/**---------------------------MEDIA QUERIERIES------------------------*/
+
+@media screen and (max-width: 400px) {
+    .search-box input {
+        font-size: .8rem;
+    }
+
+    .weather-details {
+        bottom: 80px;
+    }
+
+    .weather-details i {
+        font-size: 2rem;
+    }
+
+    .weather-details span {
+        font-size: 1rem;
+    }
+
+    .weather-details p {
+        font-size: .6rem;
+    }
+
+}
